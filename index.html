@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Cup 2026 Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-frame">
+    <header class="eyebrow-nav">
+      <div class="brand">
+        <span class="badge">26</span>
+        <span>World Cup 2026</span>
+      </div>
+
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#overview">Overview</a>
+        <a href="#matches">Matches</a>
+        <a href="#standings">Standings</a>
+        <a href="#bracket">Bracket</a>
+      </nav>
+
+      <button class="theme-toggle" aria-label="Toggle light and dark mode">☀️</button>
+    </header>
+
+    <main>
+      <section class="hero" id="overview">
+        <div class="hero-surface">
+          <p class="eyebrow">Live Dashboard</p>
+          <h1>World Cup 2026</h1>
+          <p class="hero-copy">A clean mobile-first dashboard to track standings, key matches, and the knockout bracket for a modern tournament preview.</p>
+
+          <div class="hero-actions">
+            <a class="action-card" href="#matches">
+              <span class="icon">⚽</span>
+              <span>Upcoming matches</span>
+            </a>
+            <a class="action-card" href="#standings">
+              <span class="icon">📊</span>
+              <span>Group standings</span>
+            </a>
+            <a class="action-card" href="#bracket">
+              <span class="icon">🏆</span>
+              <span>Knockout bracket</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="stadium-glow"></div>
+        </div>
+      </section>
+
+      <section class="content">
+        <article class="card" id="matches">
+          <h2>Matches</h2>
+          <p>Stay ahead with schedule highlights for the next group stage matchups, including venues and kickoff times.</p>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Match</th>
+                  <th>Stage</th>
+                  <th>Venue</th>
+                  <th>Kickoff</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Argentina vs Saudi Arabia</td>
+                  <td>Group C</td>
+                  <td>Foxborough</td>
+                  <td>17:00</td>
+                </tr>
+                <tr>
+                  <td>Spain vs Germany</td>
+                  <td>Group B</td>
+                  <td>Toronto</td>
+                  <td>20:30</td>
+                </tr>
+                <tr>
+                  <td>Brazil vs Japan</td>
+                  <td>Group H</td>
+                  <td>Mexico City</td>
+                  <td>18:15</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card" id="standings">
+          <h2>Standings</h2>
+          <p>Track top group contenders with points, goal difference, and current placement for each group.</p>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Team</th>
+                  <th>Group</th>
+                  <th>Points</th>
+                  <th>GD</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>France</td>
+                  <td>F</td>
+                  <td>7</td>
+                  <td>+5</td>
+                </tr>
+                <tr>
+                  <td>England</td>
+                  <td>D</td>
+                  <td>6</td>
+                  <td>+4</td>
+                </tr>
+                <tr>
+                  <td>Netherlands</td>
+                  <td>B</td>
+                  <td>6</td>
+                  <td>+3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card" id="bracket">
+          <h2>Bracket</h2>
+          <p>See the knockout picture with quarterfinal seedings and the final match trajectory.</p>
+          <div class="bracket-grid">
+            <div class="bracket-node">QF 1: Spain vs Brazil</div>
+            <div class="bracket-node">QF 2: Germany vs Argentina</div>
+            <div class="bracket-node">QF 3: France vs Portugal</div>
+            <div class="bracket-node">QF 4: England vs Netherlands</div>
+            <div class="bracket-node final">Final: Winner QF1 vs Winner QF3</div>
+          </div>
+        </article>
+      </section>
+
+      <footer class="site-footer">
+        Made with blood, sweat, and tears
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
