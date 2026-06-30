@@ -149,6 +149,27 @@
     </main>
   </div>
 
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="poll-title" id="pollModal">
+    <div class="modal-card">
+      <h2 id="poll-title">Who do you think will win the World Cup?</h2>
+      <form id="pollForm">
+        <fieldset>
+          <legend class="visually-hidden">Select a team</legend>
+          <label><input type="radio" name="team" value="Colombia" checked /> Colombia</label>
+          <label><input type="radio" name="team" value="Portugal" /> Portugal</label>
+          <label><input type="radio" name="team" value="USA" /> USA</label>
+          <label><input type="radio" name="team" value="Brazil" /> Brazil</label>
+          <label><input type="radio" name="team" value="Spain" /> Spain</label>
+          <label><input type="radio" name="team" value="France" /> France</label>
+          <label><input type="radio" name="team" value="Norway" /> Norway</label>
+          <label><input type="radio" name="team" value="England" /> England</label>
+          <label><input type="radio" name="team" value="Argentina" /> Argentina</label>
+        </fieldset>
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -20,6 +20,22 @@ themeToggle.addEventListener('click', () => {
   applyTheme(nextTheme);
 });
 
+const pollModal = document.getElementById('pollModal');
+const pollForm = document.getElementById('pollForm');
+const pollSeen = localStorage.getItem('pollSeen');
+
+if (!pollSeen) {
+  pollModal.classList.add('active');
+}
+
+pollForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const selected = pollForm.team.value;
+  localStorage.setItem('pollSeen', 'true');
+  pollModal.classList.remove('active');
+  console.log('Poll submitted:', selected);
+});
+
 window.addEventListener('scroll', () => {
   if (!heroVisual) return;
   const offset = window.scrollY * 0.16;
